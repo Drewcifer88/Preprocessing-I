@@ -39,15 +39,14 @@ body {
 	line-height: 1;
 	margin-left: 10%;
 	margin-right: 10%;
+	background-color:none;
 	// font-family: @main-font;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-size: 2rem;
 	font-family: @heading-font;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -70,31 +69,29 @@ html, body {
 	height: 100%;
 	
 }
-// header{
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// // justify-content: flex-end;
-// align-content: space-between;
-// padding-bottom: 3%;
-// padding-top: 3%;
-// margin-top: 1%;
-// margin-bottom: 1%;
-// border-top: 3px solid blue;
-// background-color: orange;
+ header{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+align-content: space-between;
+padding-bottom: 3%;
+padding-top: 3%;
+margin-top: 1%;
+margin-bottom: 1%;
+border-top: 6px solid blue;
+background-color:silver;
 
  h1{
-	 font-size: 100rem;
-// 	margin-bottom: 5%;
-// font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	 font-size: 6.5rem;
+
 }//closes h1
 
  h2{
 	 font-size: 5rem;
-// font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-// }
-}//closes header
 
+}//closes header
+ }
 nav {
 	
 	display: flex;
@@ -109,21 +106,52 @@ nav {
 	border-bottom: 3px solid blue;
 
 	a{
-	font-size: 5rem;
-	color: grey;
+	font-size: 3rem;
+	color: black;
+	text-decoration: none;
+	&:hover {color: tomato}
 	}
 }
 
 .body-content{
 	display: flex;
 	flex-direction: row;
-
+	margin: 5%%;
+	
 	.left{
-		// h2{
-		// font-size: xx-large;
-		// }//end h2 left
-		// p{
-		// font-size: large;
-		// }
-	} //end left
-}//end body content
+		display: flex;
+		flex-direction: column;
+		margin-right: 4%;
+
+		h2{
+			font-size: 5em;
+			border-bottom: 2px solid tomato;
+			
+		}	
+		
+		p{
+			font-size: 3rem;
+		}
+		ul{
+			font-size: 2.5rem;
+		}
+		
+	}
+	.right{
+		display: flex;
+		flex-direction: column;
+		margin-right: 4%;
+		
+		h2{
+			font-size: 5em;
+			border-bottom: 2px solid tomato;
+		}	
+		
+		p{
+			font-size: 3rem;
+		}
+		ul{
+			font-size: 2.5rem;
+		}
+	}
+}
